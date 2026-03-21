@@ -1,140 +1,158 @@
-# Privacy Policy — FitQuick
+# FitQuick — Privacy Policy
 
-**Last updated:** 2026-03-21
-**Effective date:** 2026-03-21
+**Effective Date:** 2026-03-21
+**Last Updated:** 2026-03-21
+**Version:** 1.0.0
 
-This Privacy Policy describes how **Sudarshan Tech Labs** ("we", "us", or "our") handles information in the **FitQuick** Android application ("the App").
-
----
-
-## 1. About This App
-
-FitQuick is a fitness application providing AI-generated workout plans, exercise guidance, progress tracking, and workout reminders. The App uses Firebase services for analytics and crash reporting, and Google AdMob for advertisements.
+Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
 ---
 
-## 2. Data Collected
+FitQuick is an AI-powered fitness companion for Android. It provides personalised workout plans via Google Gemini AI, progress tracking, workout reminders, and optional camera-based form checking. The App uses Firebase for analytics and crash reporting, and Google AdMob for advertisements.
 
-### 2.1 Data Stored Locally
+---
+
+## Data Collection
+
+### Data Stored Locally on Your Device
 
 | Data | Purpose | Storage |
 |---|---|---|
-| Workout logs and progress | Progress tracking | Room database (on-device) |
-| Exercise preferences and settings | Personalisation | DataStore (on-device) |
-| Camera photos (form check) | Exercise form capture | Device local storage |
+| Workout logs and exercise history | Progress tracking | Room database on your device |
+| User fitness preferences (goals, level) | Personalisation and AI plan input | DataStore on your device |
+| Camera photos (exercise form capture) | Optional form checking | App private storage on your device |
+| App settings | Personalisation | DataStore on your device |
 
-### 2.2 Data Collected by Third-Party Services
+### Data Collected by Third-Party Services
 
 **Firebase Analytics:**
-- App usage events (e.g., workout started, plan generated)
-- Device model, OS version, language
-- Session duration and screen views
-- No personally identifiable information is included in analytics events
+- App usage events (e.g., workout started, plan generated, screen views)
+- Device model, OS version, app version, language, and country
+- Session duration and navigation paths
+- No personally identifiable information (name, email) is included
 
 **Firebase Crashlytics:**
-- Crash reports including device model, OS version, and app version
-- Stack traces at the time of a crash
-- No personal fitness data is included in crash reports
+- Device model, OS version, app version
+- Crash stack traces and error logs
+- No workout data or personal information is included in crash reports
 
 **Google AdMob:**
-- Advertising identifier (Android Advertising ID)
+- Android Advertising ID (AAID) for ad personalisation
 - Device information for ad targeting
-- See Google's advertising privacy policy for details
+- For details: https://policies.google.com/technologies/ads
 
-**Google Gemini API:**
-- When generating a workout plan, your fitness preferences (goals, fitness level) are sent to the Gemini API
-- This data is used only to generate your plan and is not stored by Sudarshan Tech Labs
+**Google Gemini API (user-initiated):**
+When you request an AI workout plan, your fitness preferences (goals, fitness level, available equipment) are sent to the Gemini API. Sudarshan Tech Labs does not store this data on its servers.
 
 **Google Play Billing:**
-- In-app purchase transactions are processed by Google Play
-- We do not receive or store payment information
+In-app purchase transactions are processed by Google Play. Sudarshan Tech Labs does not receive or store payment information.
 
 ---
 
-## 3. How Data Is Used
+## How We Use Your Data
 
-| Purpose | Legal Basis |
+| Purpose | Data Used |
 |---|---|
-| Providing workout tracking functionality | App functionality |
-| Generating AI workout plans (Gemini) | User-initiated request |
-| Improving app quality (Firebase Analytics) | Legitimate interest |
-| Fixing crashes (Firebase Crashlytics) | Legitimate interest |
-| Displaying relevant advertisements (AdMob) | Legitimate interest / consent |
+| Track and display workout history | Local workout logs |
+| Generate AI workout plans | Fitness preferences sent to Gemini API |
+| Display scheduled workout reminders | Local WorkManager tasks |
+| Improve app quality | Firebase Analytics events |
+| Fix app crashes | Firebase Crashlytics reports |
+| Display advertisements | AdMob (Advertising ID) |
 
 ---
 
-## 4. Data Sharing
+## Data Storage and Security
 
-We do not sell your personal data. Data is shared only with the following service providers for the purposes described above:
+- **Local data:** Protected by Android's application sandboxing
+- **Firebase:** Google's infrastructure with encryption in transit (HTTPS/TLS) and at rest
+- **Camera photos:** Stored in the App's private directory, not accessible to other apps
+- **API keys:** Stored securely, not exposed in the App
 
-- **Google (Firebase Analytics, Crashlytics, AdMob, Gemini, Play Billing)** — see https://policies.google.com/privacy
+## Data Retention
 
-No other third-party data sharing occurs.
-
----
-
-## 5. Permissions Explained
-
-| Permission | Reason |
+| Data | Retention |
 |---|---|
-| `INTERNET` | Required for Gemini AI, Firebase, and AdMob |
+| Local workout data | Until you delete it or uninstall the App |
+| Firebase Analytics | Aggregated data, 14 months (Firebase default) |
+| Firebase Crashlytics | 90 days (Firebase default) |
+| AdMob data | Managed by Google per their privacy policy |
+
+---
+
+## Data Sharing
+
+We do not sell your data. Data is shared only with:
+
+- **Google (Firebase Analytics, Crashlytics, AdMob, Gemini, Play Billing):** https://policies.google.com/privacy
+
+---
+
+## Permissions Explained
+
+| Permission | Why It Is Needed |
+|---|---|
+| `INTERNET` | Required for Firebase, AdMob, and Gemini API |
 | `ACCESS_NETWORK_STATE` | Check connectivity before network calls |
 | `CAMERA` | Optional — capture exercise form photos |
-| `READ_EXTERNAL_STORAGE` (Android 9 and below) | Access files on legacy Android |
-| `WRITE_EXTERNAL_STORAGE` (Android 9 and below) | Save files on legacy Android |
-| `WAKE_LOCK` | Prevent screen sleep during active workout |
+| `READ_EXTERNAL_STORAGE` | Access files on Android 9 and below |
+| `WRITE_EXTERNAL_STORAGE` (Android 9 and below) | Save files on Android 9 and below |
+| `WAKE_LOCK` | Prevent screen sleep during an active workout |
 | `VIBRATE` | Haptic feedback for workout alerts |
 | `RECEIVE_BOOT_COMPLETED` | Reschedule workout reminders after device restart |
 | `POST_NOTIFICATIONS` | Send workout reminder notifications |
 
 ---
 
-## 6. Data Retention
+## Your Rights and Controls
 
-| Data | Retention |
-|---|---|
-| Local workout data | Until you delete it or uninstall the App |
-| Firebase Analytics | Aggregated, retained per Firebase default (14 months) |
-| Firebase Crashlytics | Retained per Firebase default (90 days) |
-| AdMob data | Managed by Google per their privacy policy |
+- **Delete local data:** Uninstall the App or go to Android Settings > Apps > FitQuick > Storage > Clear Data
+- **Opt out of personalised ads:** Android Settings > Privacy > Ads > Opt out of Ads Personalisation
+- **Reset Advertising ID:** Android Settings > Privacy > Ads > Reset advertising ID
+- **Delete individual workout entries:** Use the delete option within the App
 
 ---
 
-## 7. Your Rights
-
-You may:
-- Delete your local workout data via App Settings or by uninstalling the App
-- Opt out of personalised ads via Android Settings > Privacy > Ads
-- Reset your Advertising ID via Android Settings
-
----
-
-## 8. Children's Privacy
+## Children's Privacy
 
 FitQuick is not directed at children under 13. We do not knowingly collect personal information from children.
 
 ---
 
-## 9. Data Security
+## Changes to This Policy
 
-- Local data is protected by Android's application sandbox
-- All network communication uses HTTPS/TLS encryption
-- Firebase services are secured per Google's infrastructure standards
+We may update this Privacy Policy from time to time. We will notify you of significant changes via:
 
----
+- In-app notification
+- Updated policy date on this page
 
-## 10. Changes to This Policy
-
-We will notify you of significant changes by updating the "Last updated" date. Continued use of the App constitutes acceptance.
+Continued use of FitQuick after changes become effective constitutes your acceptance of the updated policy.
 
 ---
 
-## 11. Contact
+## Contact Us
 
-**Sudarshan Tech Labs**
-Official website: https://sudarshantechlabs.com
-Company email: sudarshantechlabs@gmail.com
-Developer contact: sunny.sudarshan@gmail.com
+For privacy questions, data access requests, or account deletion:
+
+- **Email:** sudarshantechlabs@gmail.com
+- **Developer:** sunny.sudarshan@gmail.com
+- **Website:** https://sudarshantechlabs.com
+- **Response Time:** Within 48 hours
+
+---
+
+## GDPR Rights (EU Users)
+
+If you are in the European Economic Area, you have the right to:
+
+- **Access** — Request a copy of your personal data
+- **Rectification** — Correct inaccurate data
+- **Erasure** — Request deletion of your data
+- **Restrict Processing** — Limit how we use your data
+- **Data Portability** — Receive your data in a portable format
+- **Object** — Object to certain types of processing
+
+To exercise these rights, contact us at the details above.
 
 ---
 
@@ -144,10 +162,17 @@ Developer contact: sunny.sudarshan@gmail.com
 |---|---|---|---|
 | App interactions | Yes (Firebase Analytics) | No | Analytics |
 | Crash logs | Yes (Crashlytics) | No | App stability |
-| Advertising ID | Yes (AdMob) | Yes (Google) | Advertising |
-| Fitness preferences | Yes (Gemini, user-initiated) | No | AI plan generation |
-| Workout logs | No (stored locally only) | No | — |
+| Advertising ID | Yes (AdMob) | Google | Advertising |
+| Fitness preferences | On request | Google (Gemini) | AI plan generation |
+| Workout logs | Local only | No | — |
 
 ---
 
-*This policy applies to the FitQuick Android application published by Sudarshan Tech Labs.*
+---
+
+**This privacy policy complies with:**
+- Google Play Store requirements
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+
+**Last reviewed:** 2026-03-21
