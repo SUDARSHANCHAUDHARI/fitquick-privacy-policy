@@ -1,178 +1,231 @@
-# FitQuick — Privacy Policy
+# FitQuick Privacy Policy
 
-**Effective Date:** 2026-03-21
-**Last Updated:** 2026-03-21
-**Version:** 1.0.0
+This repository contains the public privacy policy for FitQuick.
 
-Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
+- Privacy policy: [PRIVACY_POLICY.md](PRIVACY_POLICY.md)
+- Web version: https://sudarshanchaudhari.github.io/fitquick-privacy-policy/
+- Contact: sunny.sudarshan@gmail.com
 
----
+# FitQuick Privacy Policy
 
-FitQuick is an AI-powered fitness companion for Android. It provides personalised workout plans via Google Gemini AI, progress tracking, workout reminders, and optional camera-based form checking. The App uses Firebase for analytics and crash reporting, and Google AdMob for advertisements.
+**Effective Date:** May 17, 2026
+_Last updated: May 17, 2026_
+**Version:** 1.1.0
 
----
+FitQuick ("we," "our," or "us") is an Android app. FitQuick is an AI-powered fitness companion for Android with workout planning, exercise logging, reminders, camera form checks, ads, and premium features. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using FitQuick you agree to the practices described below.
 
-## Data Collection
+## Information We Collect
 
-### Data Stored Locally on Your Device
+### Location Data
+- FitQuick does not collect location data.
 
-| Data | Purpose | Storage |
-|---|---|---|
-| Workout logs and exercise history | Progress tracking | Room database on your device |
-| User fitness preferences (goals, level) | Personalisation and AI plan input | DataStore on your device |
-| Camera photos (exercise form capture) | Optional form checking | App private storage on your device |
-| App settings | Personalisation | DataStore on your device |
+### Account Information
+- No FitQuick account is required for core use.
+- Google Play Billing may process purchase status for premium features.
 
-### Data Collected by Third-Party Services
+### Device Information
+- Workout goals, exercise logs, progress, reminders, camera form-check captures, app preferences, analytics events, crash reports, and advertising identifiers may be processed as described below.
 
-**Firebase Analytics:**
-- App usage events (e.g., workout started, plan generated, screen views)
-- Device model, OS version, app version, language, and country
-- Session duration and navigation paths
-- No personally identifiable information (name, email) is included
+## How We Use Your Information
 
-**Firebase Crashlytics:**
-- Device model, OS version, app version
-- Crash stack traces and error logs
-- No workout data or personal information is included in crash reports
+### Location Sharing
+- FitQuick does not use your location.
 
-**Google AdMob:**
-- Android Advertising ID (AAID) for ad personalisation
-- Device information for ad targeting
-- For details: https://policies.google.com/technologies/ads
+### Account Management
+- Generate workout plans and track local progress.
+- Manage premium entitlement status through Google Play Billing.
+- Show ads in the free tier through Google AdMob.
 
-**Google Gemini API (user-initiated):**
-When you request an AI workout plan, your fitness preferences (goals, fitness level, available equipment) are sent to the Gemini API. Sudarshan Tech Labs does not store this data on its servers.
+### Service Improvement
+- Use Firebase Analytics and Crashlytics to improve reliability and understand broad usage patterns.
+- Use Google Gemini only when AI workout planning or form-check features are requested.
+- We do not sell your fitness data.
 
-**Google Play Billing:**
-In-app purchase transactions are processed by Google Play. Sudarshan Tech Labs does not receive or store payment information.
+## Storage and Retention
 
----
+### Data Storage
+- Workout plans, logs, preferences, and reminders are stored locally using on-device storage such as Room/DataStore.
+- Camera frames for form checks are used for the requested feature and are not stored on Sudarshan Tech Labs servers.
+- Firebase may receive analytics and crash information; AdMob may process advertising identifiers for ads.
 
-## How We Use Your Data
+### Data Retention
+- Local workout data remains until you delete it, clear app data, or uninstall the app.
+- Firebase and AdMob retain diagnostic, analytics, and ad data according to their policies.
 
-| Purpose | Data Used |
-|---|---|
-| Track and display workout history | Local workout logs |
-| Generate AI workout plans | Fitness preferences sent to Gemini API |
-| Display scheduled workout reminders | Local WorkManager tasks |
-| Improve app quality | Firebase Analytics events |
-| Fix app crashes | Firebase Crashlytics reports |
-| Display advertisements | AdMob (Advertising ID) |
-
----
-
-## Data Storage and Security
-
-- **Local data:** Protected by Android's application sandboxing
-- **Firebase:** Google's infrastructure with encryption in transit (HTTPS/TLS) and at rest
-- **Camera photos:** Stored in the App's private directory, not accessible to other apps
-- **API keys:** Stored securely, not exposed in the App
-
-## Data Retention
-
-| Data | Retention |
-|---|---|
-| Local workout data | Until you delete it or uninstall the App |
-| Firebase Analytics | Aggregated data, 14 months (Firebase default) |
-| Firebase Crashlytics | 90 days (Firebase default) |
-| AdMob data | Managed by Google per their privacy policy |
-
----
+### Data Security
+- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
+- Local data remains on your device or browser unless a feature you use requires a named third-party service.
+- Network communication uses HTTPS/TLS where applicable.
+- You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
 
 ## Data Sharing
 
-We do not sell your data. Data is shared only with:
+### Family Groups
+- FitQuick does not use MyFamilyTracker-style family groups unless explicitly described in this policy.
+- If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
+- You control feature use through the app settings, permissions, account controls, or platform settings.
 
-- **Google (Firebase Analytics, Crashlytics, AdMob, Gemini, Play Billing):** https://policies.google.com/privacy
+### Third Parties
+- Google Gemini for optional AI workout generation or form analysis.
+- Firebase Analytics and Crashlytics for app quality.
+- Google AdMob for ads in the free tier.
+- Google Play Billing for purchases.
 
----
+We do **not** share your data with:
+- Data brokers
+- Unrelated advertising networks, unless advertising is explicitly listed above for this app
+- Third parties unrelated to the app features described in this policy
 
-## Permissions Explained
+## Permissions Used
 
-| Permission | Why It Is Needed |
-|---|---|
-| `INTERNET` | Required for Firebase, AdMob, and Gemini API |
-| `ACCESS_NETWORK_STATE` | Check connectivity before network calls |
-| `CAMERA` | Optional — capture exercise form photos |
-| `READ_EXTERNAL_STORAGE` | Access files on Android 9 and below |
-| `WRITE_EXTERNAL_STORAGE` (Android 9 and below) | Save files on Android 9 and below |
-| `WAKE_LOCK` | Prevent screen sleep during an active workout |
-| `VIBRATE` | Haptic feedback for workout alerts |
-| `RECEIVE_BOOT_COMPLETED` | Reschedule workout reminders after device restart |
-| `POST_NOTIFICATIONS` | Send workout reminder notifications |
+### Required Permissions
 
----
+* **INTERNET and ACCESS_NETWORK_STATE**: Used for AI features, Firebase, AdMob, and billing.
+* **CAMERA**: Used only for exercise form-check features.
+* **POST_NOTIFICATIONS, RECEIVE_BOOT_COMPLETED, WAKE_LOCK, and VIBRATE**: Used for workout reminders.
+* **AD_ID**: Used by Google AdMob where available for advertising.
+
+### Optional Permissions
+
+* Camera form checking, notifications, AI planning, and premium purchases are optional user-controlled features.
 
 ## Your Rights and Controls
 
-- **Delete local data:** Uninstall the App or go to Android Settings > Apps > FitQuick > Storage > Clear Data
-- **Opt out of personalised ads:** Android Settings > Privacy > Ads > Opt out of Ads Personalisation
-- **Reset Advertising ID:** Android Settings > Privacy > Ads > Reset advertising ID
-- **Delete individual workout entries:** Use the delete option within the App
+### Location Sharing Control
+- No location sharing exists in FitQuick.
 
----
+### Account Management
+- No FitQuick account is required; Google Play purchases are managed through your Google account.
+
+### Data Access
+- You can view, edit, or delete workout history and preferences inside the app.
+
+### GDPR Rights (EU Users)
+If you are in the European Union, you have additional rights:
+- **Right to Access**: Request a copy of your personal data
+- **Right to Rectification**: Correct inaccurate data
+- **Right to Erasure**: Request deletion of your data
+- **Right to Restrict Processing**: Limit how we use your data
+- **Right to Data Portability**: Receive your data in a portable format
+- **Right to Object**: Object to certain types of processing
+
+To exercise these rights, contact us using the methods in the Contact Us section.
+
+### Permissions
+- You can revoke Android permissions in Android Settings -> Apps -> FitQuick -> Permissions.
+- Browser permissions and storage can be managed in your browser site settings for web apps.
+- Revoking required permissions may prevent related features from functioning.
 
 ## Children's Privacy
 
-FitQuick is not directed at children under 13. We do not knowingly collect personal information from children.
+- Our app is **not intended for children under 13**.
+- We do not knowingly collect data from children under 13.
+- If you are a parent or guardian and believe your child has provided personal information, please contact us to request deletion.
+- Parents and guardians should supervise children's use of apps that store personal content.
 
----
+## Security
+
+- Local data is protected by Android, browser, or operating-system app sandboxing.
+- Network communication uses HTTPS/TLS where applicable.
+- Third-party services named in this policy provide their own security controls and privacy policies.
+- You are responsible for protecting your device, browser profile, and account credentials.
+- We do not sell your personal data.
 
 ## Changes to This Policy
 
-We may update this Privacy Policy from time to time. We will notify you of significant changes via:
+We may update this Privacy Policy to reflect new features, legal requirements, or changes in our practices. Significant changes will be:
+- Noted in the app release notes or repository when applicable
+- Reflected with a new "Last updated" date
+- Communicated in the app or project page if the change is significant
 
-- In-app notification
-- Updated policy date on this page
-
-Continued use of FitQuick after changes become effective constitutes your acceptance of the updated policy.
-
----
+The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.
 
 ## Contact Us
 
-For privacy questions, data access requests, or account deletion:
+If you have questions about this Privacy Policy, wish to request data deletion, or have privacy concerns:
 
-- **Email:** sudarshantechlabs@gmail.com
-- **Developer:** sunny.sudarshan@gmail.com
-- **Website:** https://sudarshantechlabs.com
-- **Response Time:** Within 48 hours
+* **GitHub Repository:** https://github.com/SUDARSHANCHAUDHARI/fitquick-privacy-policy
+* **Email:** sunny.sudarshan@gmail.com
+* **Main App Repository:** https://github.com/SUDARSHANCHAUDHARI/FitQuick
+
+We will respond as quickly as possible, typically within 48 hours.
+
+## Data Deletion
+
+### How to Delete Your Account:
+This app does not require an account. You can delete local app data using the options below:
+
+#### Option 1: In-App Deletion
+1. Open FitQuick
+2. Delete individual entries, reminders, history, or settings where the app provides controls
+3. Or use Android/browser settings to clear app/site data
+4. Uninstalling the app also removes local app-private data
+
+#### Option 2: Email Deletion Request
+Send an email to: **support@sudarshantechlabs.com** or **sunny.sudarshan@gmail.com**
+- Subject: "Data Deletion Request - FitQuick"
+- Include: The email/account identifier used in the app, if any
+- We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement
+
+#### Option 3: Web Deletion
+1. Visit the privacy policy website for contact and support information
+2. For browser apps, clear browser storage for the site
+3. For Android apps, clear storage from Android Settings if you want a full local reset
+
+### What Gets Deleted:
+- Local app data stored by the app
+- Local preferences and reminder/history records
+- Cached data controlled by the app or browser
+- Exported/shared files only if you delete them from where you saved them
+
+### Data Retention After Deletion:
+- **Immediate:** clearing app/site data removes local app-private data from your device/browser
+- **Uninstall:** removes app-private local data from Android apps
+- **Exports/shared files:** remain wherever you saved or sent them until you delete them
+
+To request deletion of your data:
+
+1. Open FitQuick, if installed
+2. Delete local content or clear app/site data where applicable
+3. Contact support via email: sunny.sudarshan@gmail.com
+4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists
+5. We will confirm what data can be deleted and complete the request according to the retention terms above
+
+## Firebase and Google Services
+
+This app may use the following services depending on the features you enable and the installed version:
+
+- Google Gemini API
+- Firebase Analytics
+- Firebase Crashlytics
+- Google AdMob
+- Google Play Billing
+
+Please review relevant third-party privacy policies:
+
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
+- [Google Play Terms](https://play.google.com/about/play-terms/)
+- [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
+
+## About FitQuick
+
+FitQuick is built with privacy in mind. The app is built with:
+- Kotlin and Jetpack Compose
+- Room/DataStore for local fitness data
+- Google Gemini for optional AI assistance
+- Firebase, AdMob, and Google Play Billing integrations
+
+The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.
 
 ---
 
-## GDPR Rights (EU Users)
-
-If you are in the European Economic Area, you have the right to:
-
-- **Access** — Request a copy of your personal data
-- **Rectification** — Correct inaccurate data
-- **Erasure** — Request deletion of your data
-- **Restrict Processing** — Limit how we use your data
-- **Data Portability** — Receive your data in a portable format
-- **Object** — Object to certain types of processing
-
-To exercise these rights, contact us at the details above.
+**Last Updated:** May 17, 2026
 
 ---
 
-## Play Store Data Safety Summary
+## Recent Updates (Version 1.1.0 - May 17, 2026)
 
-| Data type | Collected | Shared | Purpose |
-|---|---|---|---|
-| App interactions | Yes (Firebase Analytics) | No | Analytics |
-| Crash logs | Yes (Crashlytics) | No | App stability |
-| Advertising ID | Yes (AdMob) | Google | Advertising |
-| Fitness preferences | On request | Google (Gemini) | AI plan generation |
-| Workout logs | Local only | No | — |
+- **Aligned policy with the shared privacy-policy structure.**
+- **Clarified fitness data, camera form checks, Firebase diagnostics, AdMob ads, billing, and Gemini AI.**
 
----
-
----
-
-**This privacy policy complies with:**
-- Google Play Store requirements
-- GDPR (General Data Protection Regulation)
-- CCPA (California Consumer Privacy Act)
-
-**Last reviewed:** 2026-03-21
