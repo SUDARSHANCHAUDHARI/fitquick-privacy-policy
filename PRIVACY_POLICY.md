@@ -1,10 +1,10 @@
 # FitQuick Privacy Policy
 
 **Effective Date:** May 17, 2026
-_Last updated: May 17, 2026_
-**Version:** 1.1.0
+_Last updated: November 2, 2026_
+**Version:** 1.2.0
 
-FitQuick ("we," "our," or "us") is an Android app. FitQuick is an AI-powered fitness companion for Android with workout planning, exercise logging, reminders, camera form checks, ads, and premium features. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using FitQuick you agree to the practices described below.
+FitQuick ("we," "our," or "us") is an Android app. FitQuick is a fitness companion for Android with workout logging, progress tracking, reminders, camera progress photos, ads, and premium features. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using FitQuick you agree to the practices described below.
 
 ## Information We Collect
 
@@ -16,7 +16,7 @@ FitQuick ("we," "our," or "us") is an Android app. FitQuick is an AI-powered fit
 - Google Play Billing may process purchase status for premium features.
 
 ### Device Information
-- Workout goals, exercise logs, progress, reminders, camera form-check captures, app preferences, analytics events, crash reports, and advertising identifiers may be processed as described below.
+- Workout goals, exercise logs, progress, reminders, camera progress photos, app preferences, analytics events, crash reports, and advertising identifiers may be processed as described below.
 
 ## How We Use Your Information
 
@@ -30,14 +30,14 @@ FitQuick ("we," "our," or "us") is an Android app. FitQuick is an AI-powered fit
 
 ### Service Improvement
 - Use Firebase Analytics and Crashlytics to improve reliability and understand broad usage patterns.
-- Use Google Gemini only when AI workout planning or form-check features are requested.
+- Keep your workout data on your device; the app does not send it to a Sudarshan Tech Labs server.
 - We do not sell your fitness data.
 
 ## Storage and Retention
 
 ### Data Storage
 - Workout plans, logs, preferences, and reminders are stored locally using on-device storage such as Room/DataStore.
-- Camera frames for form checks are used for the requested feature and are not stored on Sudarshan Tech Labs servers.
+- Progress photos you take stay in the app's private storage on your device and are not uploaded to Sudarshan Tech Labs servers.
 - Firebase may receive analytics and crash information; AdMob may process advertising identifiers for ads.
 
 ### Data Retention
@@ -58,7 +58,6 @@ FitQuick ("we," "our," or "us") is an Android app. FitQuick is an AI-powered fit
 - You control feature use through the app settings, permissions, account controls, or platform settings.
 
 ### Third Parties
-- Google Gemini for optional AI workout generation or form analysis.
 - Firebase Analytics and Crashlytics for app quality.
 - Google AdMob for ads in the free tier.
 - Google Play Billing for purchases.
@@ -72,14 +71,14 @@ We do **not** share your data with:
 
 ### Required Permissions
 
-* **INTERNET and ACCESS_NETWORK_STATE**: Used for AI features, Firebase, AdMob, and billing.
-* **CAMERA**: Used only for exercise form-check features.
+* **INTERNET and ACCESS_NETWORK_STATE**: Used for Firebase, AdMob, and billing.
+* **CAMERA**: Used only to take progress photos when you choose to.
 * **POST_NOTIFICATIONS, RECEIVE_BOOT_COMPLETED, WAKE_LOCK, and VIBRATE**: Used for workout reminders.
 * **AD_ID**: Used by Google AdMob where available for advertising.
 
 ### Optional Permissions
 
-* Camera form checking, notifications, AI planning, and premium purchases are optional user-controlled features.
+* Progress photos, notifications, and premium purchases are optional user-controlled features.
 
 ## Your Rights and Controls
 
@@ -187,7 +186,6 @@ To request deletion of your data:
 
 This app may use the following services depending on the features you enable and the installed version:
 
-- Google Gemini API
 - Firebase Analytics
 - Firebase Crashlytics
 - Google AdMob
@@ -205,16 +203,20 @@ Please review relevant third-party privacy policies:
 FitQuick is built with privacy in mind. The app is built with:
 - Kotlin and Jetpack Compose
 - Room/DataStore for local fitness data
-- Google Gemini for optional AI assistance
 - Firebase, AdMob, and Google Play Billing integrations
 
 The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.
 
 ---
 
-**Last Updated:** May 17, 2026
+**Last Updated:** November 2, 2026
 
 ---
+
+## Recent Updates (Version 1.2.0 - November 2, 2026)
+
+- **Removed the Google Gemini AI workout generation and camera form-check sections.** Those features were taken out of the app, so the policy no longer describes them.
+- **Clarified that the camera is used only for progress photos, which stay on your device.**
 
 ## Recent Updates (Version 1.1.0 - May 17, 2026)
 
