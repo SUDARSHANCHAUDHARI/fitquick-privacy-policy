@@ -1,8 +1,8 @@
 # FitQuick Privacy Policy
 
 **Effective Date:** May 17, 2026
-_Last updated: November 2, 2026_
-**Version:** 1.2.0
+_Last updated: November 8, 2026_
+**Version:** 1.3.0
 
 FitQuick ("we," "our," or "us") is an Android app. FitQuick is a fitness companion for Android with workout logging, progress tracking, reminders, camera progress photos, ads, and premium features. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using FitQuick you agree to the practices described below.
 
@@ -45,17 +45,17 @@ FitQuick ("we," "our," or "us") is an Android app. FitQuick is a fitness compani
 - Firebase and AdMob retain diagnostic, analytics, and ad data according to their policies.
 
 ### Data Security
-- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
-- Local data remains on your device or browser unless a feature you use requires a named third-party service.
-- Network communication uses HTTPS/TLS where applicable.
-- You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
+- On your device, your workout data and progress photos sit in the App's private storage, protected by Android's application sandbox.
+- In transit to the three Google services named in this policy — Firebase Analytics, Firebase Crashlytics and AdMob — data is protected by those services' own transport security, and their handling of it is governed by Google's privacy policy rather than ours.
+- No Sudarshan Tech Labs server exists, so there is no third location holding your data.
+- Your workout data stays on your device. Only the analytics events, crash reports and advertising data named in this policy leave it.
+- Network communication uses HTTPS/TLS.
+- You should protect your device and your Google account with strong authentication, since your Play purchases and the Google services above are tied to it.
 
 ## Data Sharing
 
-### Family Groups
-- FitQuick does not use family groups unless explicitly described in this policy.
-- If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
-- You control feature use through the app settings, permissions, account controls, or platform settings.
+### Sharing with other people
+- FitQuick has no pairing, sharing, family-group or collaboration feature. Your workout data is not shared with any other person through the App.
 
 ### Third Parties
 - Firebase Analytics and Crashlytics for app quality.
@@ -75,6 +75,11 @@ We do **not** share your data with:
 * **CAMERA**: Used only to take progress photos when you choose to.
 * **POST_NOTIFICATIONS, RECEIVE_BOOT_COMPLETED, WAKE_LOCK, and VIBRATE**: Used for workout reminders.
 * **AD_ID**: Used by Google AdMob where available for advertising.
+* **ACCESS_ADSERVICES_AD_ID, ACCESS_ADSERVICES_ATTRIBUTION, ACCESS_ADSERVICES_TOPICS**: Declared by the AdMob library for Android's Privacy Sandbox advertising APIs. These cover the advertising identifier, ad attribution, and the Topics API used for interest-based ads. They arrive with AdMob rather than being requested by FitQuick's own code.
+* **FOREGROUND_SERVICE and BIND_JOB_SERVICE**: Declared by WorkManager, which schedules the workout reminders.
+* **DUMP**: Declared by a build-time library. Android grants it only to system apps, so it has no effect here.
+
+The App's own manifest declares seven permissions; the finished build carries thirteen, the rest arriving with the Google libraries above. The list you see on the Play Store is the full merged set, which is why all of them appear here.
 
 ### Optional Permissions
 
@@ -104,8 +109,8 @@ To exercise these rights, contact us using the methods in the Contact Us section
 
 ### Permissions
 - You can revoke Android permissions in Android Settings -> Apps -> FitQuick -> Permissions.
-- Browser permissions and storage can be managed in your browser site settings for web apps.
-- Revoking required permissions may prevent related features from functioning.
+- Revoking the camera permission stops progress photos; the rest of the app continues to work.
+- You can reset or delete your advertising ID in Android Settings -> Privacy -> Ads, which limits ad personalisation.
 
 ## Children's Privacy
 
@@ -116,10 +121,10 @@ To exercise these rights, contact us using the methods in the Contact Us section
 
 ## Security
 
-- Local data is protected by Android, browser, or operating-system app sandboxing.
-- Network communication uses HTTPS/TLS where applicable.
-- Third-party services named in this policy provide their own security controls and privacy policies.
-- You are responsible for protecting your device, browser profile, and account credentials.
+- Local data is protected by Android's application sandbox.
+- Network communication uses HTTPS/TLS.
+- The Google services named in this policy provide their own security controls and privacy policies.
+- You are responsible for protecting your device and your Google account credentials.
 - We do not sell your personal data.
 
 ## Changes to This Policy
@@ -149,7 +154,7 @@ This app does not require an account. You can delete local app data using the op
 #### Option 1: In-App Deletion
 1. Open FitQuick
 2. Delete individual entries, reminders, history, or settings where the app provides controls
-3. Or use Android/browser settings to clear app/site data
+3. Or clear app data from Android Settings -> Apps -> FitQuick -> Storage
 4. Uninstalling the app also removes local app-private data
 
 #### Option 2: Email Deletion Request
@@ -158,20 +163,16 @@ Send an email to: **support@sudarshantechlabs.com** or **sunny.sudarshan@gmail.c
 - Include: The email/account identifier used in the app, if any
 - We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement
 
-#### Option 3: Web Deletion
-1. Visit the privacy policy website for contact and support information
-2. For browser apps, clear browser storage for the site
-3. For Android apps, clear storage from Android Settings if you want a full local reset
-
 ### What Gets Deleted:
-- Local app data stored by the app
-- Local preferences and reminder/history records
-- Cached data controlled by the app or browser
-- Exported/shared files only if you delete them from where you saved them
+- Local app data stored by the app, including your workout history and progress photos
+- Local preferences and reminder records
+- Cached data controlled by the app
+- Exported or shared files only if you delete them from where you saved them
 
 ### Data Retention After Deletion:
-- **Immediate:** clearing app/site data removes local app-private data from your device/browser
-- **Uninstall:** removes app-private local data from Android apps
+- **Immediate:** clearing app data removes local app-private data from your device
+- **Uninstall:** removes app-private local data
+- **Already sent to Google:** analytics events, crash reports and advertising data already transmitted are held by Google under their own retention policies, not ours. Clearing app data does not recall them
 - **Exports/shared files:** remain wherever you saved or sent them until you delete them
 
 To request deletion of your data:
@@ -212,6 +213,12 @@ The app collects only the data needed for the features described in this policy,
 **Last Updated:** November 2, 2026
 
 ---
+
+## Recent Updates (Version 1.3.0 - November 8, 2026)
+
+- **Replaced a boilerplate security sentence** that claimed data was protected by "Android, the browser, Firebase, Google, GitHub, or other services". FitQuick uses no browser and no GitHub service. The section now describes where data actually sits: app-private storage on your device, and in transit to the three named Google services.
+- **Listed the permissions that arrive with the Google libraries.** The App's own manifest declares seven; the finished build carries thirteen. The additions are the Privacy Sandbox advertising permissions (`ACCESS_ADSERVICES_AD_ID`, `ACCESS_ADSERVICES_ATTRIBUTION`, `ACCESS_ADSERVICES_TOPICS`), `FOREGROUND_SERVICE` and `BIND_JOB_SERVICE` from WorkManager, and `DUMP`. The Play Store shows the merged set, so all of them belong here.
+- **Replaced the hedged "Family Groups" wording** with a plain statement: FitQuick has no pairing, sharing or family-group feature.
 
 ## Recent Updates (Version 1.2.0 - November 2, 2026)
 
